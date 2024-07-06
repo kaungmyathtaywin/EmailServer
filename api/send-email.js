@@ -25,7 +25,7 @@ export default (req, res) => {
     const mailOptions = {
         from: process.env.EMAIL_USER,
         to: process.env.EMAIL_USER,
-        subject: `${name} @${email}: ${subject}`,
+        subject: `${name} | ${email}: ${subject}`,
         text: message
     }
 
