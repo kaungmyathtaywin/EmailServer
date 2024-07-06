@@ -4,6 +4,7 @@
   "description": "Server application to send emails to John",
   "main": "server.js",
   "scripts": {
+    "build": "node server.js",
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
