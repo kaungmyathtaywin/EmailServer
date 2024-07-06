@@ -1,9 +1,11 @@
 {
     "version": 2,
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/"
-        }
+    "builds": [
+      { "src": "api/**/*.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/", "dest": "/api/index.js" },
+      { "src": "/email", "dest": "/api/send-email.js" }
     ]
-}
+  }
+  
