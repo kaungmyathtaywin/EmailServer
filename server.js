@@ -9,6 +9,10 @@ const port = 8000
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+app.get('/', (req, res) => {
+    res.send("Hello, you are looking at John's email-server.")
+})
+
 app.post('/email', (req, res) => {
     const { name, email, subject, message } = req.body
 
